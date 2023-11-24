@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
-
-
+import Pagination from '../components/Pagination';
+import NavAlbum from '../components/NavAlbum';
+import CardsComponent from '../components/CardsComponent';
+import Header from '../components/Header';
 
 const Album = () => {
     const [photos, setPhotos] = useState([]);
