@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Cards from "../components/home-components/Cards";
-import ButtomAlbumPage from "../components/home-components/ButtomAlbumPage";
+import ButtonAlbumPage from "../components/home-components/ButtomAlbumPage";
 import Wave from "../components/home-components/Wave";
 import DescriptionHome from "../components/home-components/DescriptionHome";
 import PhoneImg from "../components/home-components/PhoneImg";
@@ -17,7 +17,7 @@ export default function Home() {
                     <PhoneImg />
                     <DescriptionHome />
                     <Cards />
-                    <ButtomAlbumPage />
+                    <ButtonAlbumPage />
                 </div>
             </div>
     </div>
