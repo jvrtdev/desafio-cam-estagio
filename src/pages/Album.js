@@ -40,5 +40,11 @@ const Album = () => {
     const filteredPhotos = currentAlbum 
     ? photos.filter((photo) => photo.albumId === currentAlbum)
     : photos;
-
+    
+    // Lógica para calcular as fotos a serem exibidas na página atual
+    const indexOfLastPhoto = currentPage * photosPerPage;
+    const indexOfFirstPhoto = indexOfLastPhoto - photosPerPage;
+    const currentPhotos = filteredPhotos.slice(indexOfFirstPhoto, indexOfLastPhoto)
+    const totalPages = Math.ceil(filteredPhotos.length / photosPerPage)
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
 }
