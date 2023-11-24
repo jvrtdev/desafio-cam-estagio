@@ -50,7 +50,11 @@ const Album = () => {
 
     return (
         <div className='w-full h-full bg-white'>
-            
+
+        <NavAlbum 
+        albums={albums}
+        filterPhotosByAlbum={filterPhotosByAlbum}
+        />
         </div>
     )
 }
