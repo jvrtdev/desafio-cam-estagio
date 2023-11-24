@@ -51,10 +51,19 @@ const Album = () => {
     return (
         <div className='w-full h-full bg-white'>
 
-        <NavAlbum 
-        albums={albums}
-        filterPhotosByAlbum={filterPhotosByAlbum}
-        />
+            <NavAlbum 
+            albums={albums}
+            filterPhotosByAlbum={filterPhotosByAlbum}
+            />
+
+            {/* area onde é mostrado o numero do album */}
+            {currentAlbum !== null 
+                ? <h1 className="text-2xl text-center">
+                    Album {currentAlbum}
+                </h1>
+                : <h1 className='text-2xl text-center'>Todas as fotos</h1>    
+            }
+            
         </div>
     )
 }
