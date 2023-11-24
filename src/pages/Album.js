@@ -10,7 +10,19 @@ const Album = () => {
     const [albums, setAlbums] = useState([])
 
     const fetchPhotos = async () => {
+        try {
+            const response = await fetch('https://jsonplaceholder.typicode.com/photos');
+            const data = await response.json();
+            setPhotos(data); // buscando todas as fotos
+            setAlbums([...new Set(data.map(photo => photo.albumId))]) //obter um unico album
+            } 
+            catch (error) {
+            console.error('Erro ao buscar fotos:', error);
+        }
+    };
 
-    }
+    useEffect(() => {
+        fetchPhotos();
+    }, []);
 
 }
