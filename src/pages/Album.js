@@ -63,7 +63,18 @@ const Album = () => {
                 </h1>
                 : <h1 className='text-2xl text-center'>Todas as fotos</h1>    
             }
-            
+            <CardsComponent 
+            currentPhotos={currentPhotos}
+            removePhoto={removePhoto}
+            />
+
+            <Pagination
+                photosPerPage={photosPerPage}
+                totalPhotos={photos.length}
+                paginate={paginate}
+                currentPage={currentPage}
+                totalpages={totalPages}
+            />
         </div>
     )
 }
