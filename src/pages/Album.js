@@ -47,4 +47,10 @@ const Album = () => {
     const currentPhotos = filteredPhotos.slice(indexOfFirstPhoto, indexOfLastPhoto)
     const totalPages = Math.ceil(filteredPhotos.length / photosPerPage)
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+    return (
+        <div className='w-full h-full bg-white'>
+            
+        </div>
+    )
 }
