@@ -1,10 +1,10 @@
 import React from 'react'
-import CardResources from './CardResources'
 import { IoMdBatteryCharging } from "react-icons/io";
 import { CgPerformance } from "react-icons/cg";
 import { CiCamera } from "react-icons/ci";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { MdSecurity } from "react-icons/md";
+import CardResources from './CardsResources';
 
 
 const propsCards = [
