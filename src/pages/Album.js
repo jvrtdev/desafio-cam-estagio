@@ -9,4 +9,8 @@ const Album = () => {
     const [currentAlbum, setCurrentAlbum] = useState(null)
     const [albums, setAlbums] = useState([])
 
+    const fetchPhotos = async () => {
+
+    }
+
 }
