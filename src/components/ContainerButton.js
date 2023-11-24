@@ -5,16 +5,16 @@ import ButtonAction from './ButtonAction'
 
 export default function ContainerButton({removePhoto, openModal, photo}) {
         return (
-        <div className="flex mt-1 justify-between">
-            <ButtonAction
-            action={openModal}>
-                <FaInfo />
-            </ButtonAction>
+            <div className="flex mt-1 justify-between">
+                <ButtonAction
+                action={openModal}>
+                    <FaInfo />
+                </ButtonAction>
 
-            <ButtonAction 
-            action={() => removePhoto(photo.id)}>
-                <FaRegTrashAlt />
-            </ButtonAction>
-        </div>
+                <ButtonAction 
+                action={() => removePhoto(photo.id)}>
+                    <FaRegTrashAlt />
+                </ButtonAction>
+            </div>
     )
 }
