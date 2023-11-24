@@ -25,4 +25,10 @@ const Album = () => {
         fetchPhotos();
     }, []);
 
+    //logica para remover foto
+    const removePhoto = (photoId) => {
+        const updatedPhotos = photos.filter((photo) => photo.id !== photoId);
+        setPhotos(updatedPhotos);
+        localStorage.setItem('albumPhotos', JSON.stringify(updatedPhotos));
+    };
 }
