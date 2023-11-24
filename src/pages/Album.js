@@ -31,4 +31,14 @@ const Album = () => {
         setPhotos(updatedPhotos);
         localStorage.setItem('albumPhotos', JSON.stringify(updatedPhotos));
     };
+    //logica para filtragem de fotos pelo id do album selecionado
+    const filterPhotosByAlbum = (albumId) => {
+        setCurrentAlbum(albumId);
+        setCurrentPage(1)
+    };
+    //logica para filtrar as fotos e armazenar em uma variavel
+    const filteredPhotos = currentAlbum 
+    ? photos.filter((photo) => photo.albumId === currentAlbum)
+    : photos;
+
 }
